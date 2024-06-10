@@ -1,1 +1,1 @@
-Link:- https://portfolio1-b538sbxkm-vedika-patidars-projects.vercel.app
+Link:- https://voluble-pastelito-23736d.netlify.app
