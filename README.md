@@ -1,1 +1,1 @@
-Link:- https://comforting-florentine-f33f2a.netlify.app
+Link:- portfolio1-ten-liart.vercel.app
