@@ -341,6 +341,7 @@ section .title::after{
 }
 .projects .carousel .card:hover{
     background: rgb(107, 56, 142);
+    color: black;
 }
 .projects .carousel .card .box{
     display: flex;
@@ -366,7 +367,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .projects .carousel .card:hover img{
-    border-color: #fff;
+    border-color: #131212;
 }
 .owl-dots{
     text-align: center;
@@ -391,6 +392,10 @@ section .title::after{
 }
 .projects a{
     color: white;
+}
+.projects .button1:hover{
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
 }
 .projects .button1{
     padding: 15px;
