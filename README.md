@@ -1,1 +1,1 @@
-Link:- portfolio1-ten-liart.vercel.app
+Link:- portfolio1-4zoydl97u-vedika-patidars-projects.vercel.app
