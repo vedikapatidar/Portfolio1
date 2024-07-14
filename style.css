@@ -75,6 +75,19 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
+.button1{
+    margin-top: 20px;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-radius: 6px;
+    background-color: rgb(107, 56, 142);
+}
+.button1:hover{
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+}
 
 /* navbar styling */
 .navbar{

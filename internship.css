@@ -34,11 +34,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .projectpage, .skills, .projects, .contact, footer{
+.about, .interships, .skills, .projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.projectpage .serv-content,
+.interships .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -106,24 +106,6 @@ section .title::after{
 .navbar.sticky .logo a span{
     color: #fff;
 }
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a{
-    display: block;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: rgb(107, 56, 142);
-}
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
 
 /* menu btn styling */
 .menu-btn{
@@ -160,57 +142,46 @@ section .title::after{
     filter: brightness(90%);
 }
 
-/* projectpage section styling */
-.projectpage, .projects{
+/* interships section styling */
+.interships, .projects{
     color:#fff;
     background: #111;
 }
-
-.projectpage .serv-content .card{
+.interships .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
+    margin-bottom: 20px;
     border-radius: 6px;
     padding: 50px 25px;
-    margin-bottom: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.projectpage .serv-content .card:hover{
+.interships .serv-content .card:hover{
     background: rgb(107, 56, 142);
-    color: black;
 }
-.projectpage .serv-content .card .box{
+.interships .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.projectpage .serv-content .card:hover .box{
+.interships .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.projectpage .serv-content .card .text{
+.interships .serv-content .card i{
+    font-size: 50px;
+    color: rgb(107, 56, 142);
+    transition: color 0.3s ease;
+}
+.interships .serv-content .card:hover i{
+    color: #fff;
+}
+.interships .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.projectpage .serv-content .card a{
+.interships .serv-content .card a{
     color: rgb(233, 228, 236);
-}
-.projectpage .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid rgb(107, 56, 142);
-    transition: all 0.3s ease;
-}
-.projectpage .card:hover img{
-    border-color: #000000;
-}
-.projectpage .serv-content .card .box p{
-    margin-bottom: 20px;
-}
-.projectpage .serv-content .card .box a{
-    font-size: 20px;
-    font-weight: 600;
+    text-decoration: underline;
 }
 
 /* footer section styling */
@@ -245,6 +216,13 @@ footer span a:hover{
 }
 
 /* responsive media query start */
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
@@ -280,12 +258,38 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
     .max-width{
         max-width: 930px;
     }
-    .projectpage .serv-content .card{
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .interships .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
     }
 }
 
@@ -302,7 +306,38 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .projectpage .serv-content .card{
+    .interships .serv-content .card{
         width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
     }
 }
