@@ -88,6 +88,22 @@ section .title::after{
     background: transparent;
     border: 2px solid rgb(255, 255, 255);
 }
+.button2{
+    display: inline-block;
+    background: rgb(107, 56, 142);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(107, 56, 142);
+    transition: all 0.3s ease;
+}
+.button2:hover{
+    color: rgb(107, 56, 142);
+    background: none;
+}
 
 /* navbar styling */
 .navbar{
