@@ -55,26 +55,6 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
-section .title::after{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: rgb(107, 56, 142);
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
-}
 
 /* navbar styling */
 .navbar{
@@ -147,10 +127,12 @@ section .title::after{
     color:#fff;
     background: #111;
 }
+.interships .serv-content{
+    justify-content: center;
+}
 .interships .serv-content .card{
-    width: calc(33% - 20px);
+    width: 950px;
     background: #222;
-    text-align: center;
     margin-bottom: 20px;
     border-radius: 6px;
     padding: 50px 25px;
@@ -160,16 +142,9 @@ section .title::after{
 .interships .serv-content .card:hover{
     background: rgb(107, 56, 142);
 }
-.interships .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.interships .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
 .interships .serv-content .card i{
     font-size: 50px;
     color: rgb(107, 56, 142);
-    transition: color 0.3s ease;
 }
 .interships .serv-content .card:hover i{
     color: #fff;
@@ -205,10 +180,10 @@ footer span a:hover{
   text-decoration: none;
   font-size: 28px;
 }
-.hover-links a:nth-child(3) {
+.hover-links a:nth-child(2) {
   margin-left: 10px;
 }
-.hover-links a:nth-child(4) {
+.hover-links a:nth-child(3) {
   margin-left: 10px;
 }
 .hover-links{
